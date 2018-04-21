@@ -55,7 +55,7 @@ article {
 }
 
 img {
-  float: right;
+  float: center;
   margin-left: 20px;
   max-width: 200px;
 }
