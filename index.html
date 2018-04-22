@@ -27,9 +27,11 @@
         <section>
         </section>
       </div>
-
-    </div>
+<aside>
 <img class-"youTube" src="images/yt_logo_rgb_light.png">
+</aside>
+    </div>
+
     <!--
       Apply both necessary API scripts to your HTML. The first is for the YouTube Data
       API, and the second is for the YouTube Iframe Player API
@@ -144,7 +146,10 @@
         }
       }
     </script>
-
+<script src="jquery-3.3.1.js"></script>
+  <script>
+    $(".youTube").hide();                                                                    
+    $(".youtube").slideDown(1000);
   
 
   </body>
