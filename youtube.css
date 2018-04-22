@@ -6,6 +6,10 @@ body {
  background: url(images/cubism.png),radial-gradient(white, gray, black);
 }
 
+.youTube{
+margin-left:30 px;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
