@@ -1,8 +1,10 @@
-body {
-  font-family: sans-serif;
-  background-color: #c9c7c6
-}
 
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto:400,700');
+
+
+body {
+ background: url(images/cubism.png),rgba(255,255,255,1);
+}
 
 .wrapper {
   width: 80%;
@@ -17,15 +19,35 @@ body {
 
 form p:nth-of-type(1) {
   margin-top: 0;
-}
+} 
 
 h1 {
+  font-family: 'Black Han Sans', sans-serif;
   text-align: center;
+  color:rgb(255,0,0);opacity:0.9;
+  text-shadow: 3px 3px black;
+}
+.enter{
+  font-weight: bold;
+  text-align: right;
   color:red;
   text-shadow: 2px 2px black;
 }
 
-h2 {
+.submit{
+ text-align: center;
+  color:red;
+  text-shadow: 1px 1px black;
+
+}
+
+.myStuff{
+ text-align: left;
+  color:red;
+  text-shadow: 1px 1px black;
+}
+
+*h2 {
   font-size: 20px;
 }
 
@@ -72,7 +94,7 @@ span {
   background-color: #ccc;
   padding: 5px;
   margin: 5px;
-}
+} 
 aside {
 
   flex: 1 1 auto;
