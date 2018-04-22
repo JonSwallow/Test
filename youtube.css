@@ -5,8 +5,8 @@
 body {
  background: url(images/cubism.png),radial-gradient(white, gray, black);
 }
-.youTube{
 
+.youTube{
 position: absolute;
 left:25%;
 }
