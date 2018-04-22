@@ -29,7 +29,7 @@
       </div>
 <aside>
 <img class="youTube" src="images/yt_logo_rgb_light.png">
-<iframe width="480" height="360" src="https://www.youtube.com/embed/q8k2AxlPNz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="tubeYou" width="480" height="360" src="https://www.youtube.com/embed/q8k2AxlPNz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </aside>
     </div>
 
@@ -149,8 +149,12 @@
     </script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
-    $(".youTube").hide();                                                                    
-    $(".youtube").slideDown(1000);
+  
+	     $(".youTube").hide();
+        $(".tubeYou").hide();
+        $(".youTube").slideDown(1000, function() {
+            $(".tubeYou").fadeIn();
+        });
   </script>
 
   </body>
