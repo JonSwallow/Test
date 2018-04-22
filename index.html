@@ -2,23 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>YouTube APIs example</title>
+    <meta name="description" content="Expanding on YouTube API">
+    <meta name="author" content="Jon Swallow">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
     <link href="youtube.css" rel="stylesheet">
+	<title>Expanding YouTube API</title>
   </head>
   <body>
     
-    <h1>Video Search</h1>
+    <h1 class="headin">Video Search</h1>
 
     <div class="wrapper">
 
       <div class="controls">
         <form>
           <p>
-            <label for="search">Enter a search term: </label>
+            <label class="enter" for="search">Search Query: </label>
             <input type="text" id="search" class="search" required>
           </p>
           <p>
-            <button class="submit">Submit search</button>
+            <button class="submit">Submit</button>
           </p>
         </form>
       </div>
@@ -27,9 +30,10 @@
         <section>
         </section>
       </div>
-<aside>
+<aside class="sinatra">
 <img class="youTube" src="images/yt_logo_rgb_light.png">
-<iframe class="tubeYou" width="480" height="360" src="https://www.youtube.com/embed/q8k2AxlPNz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="tubeYou" width="440" height="320" src="https://www.youtube.com/embed/q8k2AxlPNz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p class="myStuff">Awesome video by a nice guy</p>
 </aside>
     </div>
 
@@ -124,8 +128,8 @@
         // Specifying the ID of the element to be replaced by it (the <div>),
         // A height and width, and an event handler to handle the custom onReady event
         var player = new YT.Player(vidId, {
-          height: '360',
-          width: '480',
+          height: '320',
+          width: '440',
           videoId: result.id.videoId,
           events: {
             'onReady': onPlayerReady
@@ -149,11 +153,12 @@
     </script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
-  
-	     $(".youTube").hide();
-        $(".tubeYou").hide();
-        $(".youTube").slideDown(1000, function() {
+         $(".headin").hide();
+		 $(".youTube").hide();
+         $(".tubeYou").hide();
+         $(".youTube").slideDown(2000, function() {
             $(".tubeYou").fadeIn();
+			$(".headin").slideDown(2000);
         });
   </script>
 
