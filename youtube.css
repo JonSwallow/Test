@@ -5,9 +5,10 @@
 body {
  background: url(images/cubism.png),radial-gradient(white, gray, black);
 }
-
 .youTube{
-margin-left:30 px;
+
+position: absolute;
+left:25%;
 }
 
 .wrapper {
@@ -105,7 +106,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 25px;
+  margin-top:40 px;
   margin-left: 0px;
   margin-right: 1em;
   min-width: auto;
