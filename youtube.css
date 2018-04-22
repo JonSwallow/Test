@@ -1,7 +1,6 @@
 body {
   font-family: sans-serif;
-  color: red;
-  
+  background-color: #000000
 }
 
 .wrapper {
@@ -57,9 +56,9 @@ article {
 }
 
 img {
-  float: left;
+  float: center;
   margin-left: 20px;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .clearfix {
