@@ -158,7 +158,25 @@
             $(".tubeYou").fadeIn();
 			$(".headin").slideDown(2000);
         });
-
+		var newP = $("<p>");
+		newP.addClass("creditAuthor");
+		newP.text("This is an extension of code by chrisdavidmills ");
+		$(".controls").append(newP);
+		
+		var link = $("<a/>");
+		link.addClass("linked");
+		link.attr('href',"https://github.com/mdn/learning-area/tree/master/javascript/apis/third-party-apis/youtube");
+		link.html("<center>Find it HERE</center><br><br>");
+		$(".controls").append(link);
+		
+		var newImg = $("<img/>",
+		          {id: "funkIt",
+				  src: "images/funkWa.png",
+				  })
+		
+		$(".controls").append(newImg);
+	    $("#funkIt").hide();
+		$("#funkIt").fadeIn(9000);
   </script>
 
   </body>
