@@ -3,7 +3,7 @@
 
 
 body {
- background: url(images/cubism.png),radial-gradient(rgba(90,90,90,0), rgba(80,80,80,1));
+ background: url(images/cubism.png),radial-gradient(white, gray, black);
 }
 
 .wrapper {
