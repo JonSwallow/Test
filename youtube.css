@@ -1,11 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto');
 
 
 body {
  background: url(images/cubism.png),radial-gradient(white, gray, black);
-}
-
+ font-family: 'Roboto', sans-serif;
+ }
+ 
 .youTube{
 position: relative;
 }
@@ -46,10 +47,19 @@ h1 {
 }
 
 .myStuff{
+text-transform:capitalize;
  text-align: left;
   color:red;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px black;
 }
+.creditAuthor{
+ text-transform: uppercase;
+ font-weight: bold;
+  text-align: center;
+  color:red;
+  text-shadow: 2px 2px black;
+}
+
 
 *h2 {
   font-size: 20px;
