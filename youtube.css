@@ -73,3 +73,20 @@ span {
   padding: 5px;
   margin: 5px;
 }
+aside {
+
+  flex: 1 1 auto;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 0px;
+  margin-right: 1em;
+  min-width: auto;
+  max-width: auto;
+  min-height: auto;
+  max-height: auto;
+}
