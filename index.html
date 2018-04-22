@@ -6,7 +6,7 @@
     <link href="youtube.css" rel="stylesheet">
   </head>
   <body>
-    <img id="youTube" src= "/images/yt_logo_rgb_light.png">
+    <img class="youTube" src= "/images/yt_logo_rgb_light.png">
     <h1>YouTube video search</h1>
 
     <div class="wrapper">
@@ -146,10 +146,10 @@
     </script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
-    $("#youTube").hide();                                                                     
+    $(".youTube").hide();                                                                     
     $(".controls").hide();
    
-    $("#youtTube").slideDown(1000, function(){
+    $(".youtTube").slideDown(1000, function() {
     $(".controls").fadeIn();
     });
     </script>
