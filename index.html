@@ -6,7 +6,7 @@
     <link href="youtube.css" rel="stylesheet">
   </head>
   <body>
-    <img src="/images/yt_logo_rgb_light.png">
+    <img class-"youTube" src="images/yt_logo_rgb_light.png">
     <h1>YouTube video search</h1>
 
     <div class="wrapper">
@@ -83,7 +83,7 @@
           // set what kind of data the response will include
           part: 'snippet',
           // set the number of results that will be returned
-          maxResults: 3,
+          maxResults: 10,
           // set the search query to search for
           q: searchTerm.value
         });
@@ -144,13 +144,12 @@
         }
       }
     </script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="jquery-3.3.1.js"></script>
   <script>
-                                                                        
+    $(".youTube").hide();                                                                    
     $(".controls").hide();
-   
+    $(".youtube").slideDown(1000);
     $(".controls").slideDown(1000);
 
-    </script>
   </body>
 </html>
