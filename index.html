@@ -145,16 +145,20 @@
           }
         }
       }
+	  
     </script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
          $(".headin").hide();
+		 $("#openweathermap-widget-19").hide();
 		 $(".youTube").hide();
          $(".tubeYou").hide();
          $(".youTube").slideDown(2000, function() {
+		    $("#openweathermap-widget-19").fadeIn();
             $(".tubeYou").fadeIn();
 			$(".headin").slideDown(2000);
         });
+
   </script>
 
   </body>
