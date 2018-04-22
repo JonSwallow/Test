@@ -149,8 +149,9 @@
                                                                           
     $(".controls").hide();
     $("#youTube").hide();
-    $("#youtTube").slideDown(900);
-    $(".controls").slideDown(1000);
+    $("#youtTube").slideDown(1000, function(){
+    $(".controls").fadeIn();
+    });
     </script>
   </body>
 </html>
